@@ -6,10 +6,12 @@ let app = new Vue({
     data:{
         ourl:null,
         res:null,
-        length:10
+        length:10,
+        cpmsg:"コピー"
     },
     methods:{
         longify:e=>{
+            app.cpmsg = "コピー"
             if(app.length < 10){
                 alert("増やすURLの長さは10以上にしてください。");
                 return;
@@ -57,6 +59,12 @@ let app = new Vue({
                 }
             }
             app.res = app.ourl + resd;
+        },
+        cp:e=>{
+            if(navigator.clipboard){
+                navigator.clipboard.writeText(app.res)
+                app.cpmsg="コピーしました"
+            }
         }
     }
 });
