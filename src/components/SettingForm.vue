@@ -14,8 +14,7 @@ const space = ref(1)
       @click="type_isDeploy=true">展開モード</button>
     <button :class="type_isDeploy?'':'active'"
       @click="type_isDeploy=false">GETモード</button><br>
-    <small>※GETモードは一部のサイトで動作しない場合があります。
-      <br>&nbsp;&nbsp;例えばこのサイトです。</small><br>
+    <small>※GETモードは一部のサイトで動作しない場合があります。</small><br>
     <small>※展開モードはURLが間違っていたりする場合はBingにリダイレクトされます。</small><br>
     増やす量：<input type="number" min="1" :readonly="type_isDeploy" v-model="volume"><br>
     余白量：<input type="number" min="1" :readonly="!type_isDeploy" v-model="space"><br>
