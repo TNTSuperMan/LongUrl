@@ -1,0 +1,47 @@
+body{
+    background:#111;
+    color:#eee;
+}
+button{
+    padding:8px;
+    margin: 5px;
+    border-radius: 10px;
+    border:none;
+    background:#222;
+    color:#999;
+    font-size:15px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+button:hover{
+    background:#444;
+    color:#fff;
+}
+button.active{
+    background: #ddd;
+    color:#333;
+}
+button.btn{
+    background:#333;
+    color:#fff;
+    font-size:20px;
+    padding:10px;
+    border-radius: 20px;
+}
+button.btn:hover{
+    background:#666;
+    color:#eee;
+}
+input{
+    background:#fff;
+    border:1px #000 solid;
+    padding:5px;
+    color:#000;
+}
+input:read-only{
+    background:#ccc;
+    color:#666;
+}
+a{
+    word-break: break-all;
+}
