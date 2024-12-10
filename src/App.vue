@@ -13,7 +13,7 @@ const result = ref("")
 
   <h2>結果</h2>
   長さ：{{ result.length }}<br>
-  <a :href="result">{{ result }}</a>
+  <a :href="result" target="_blank">{{ result }}</a>
   <br><br><small>Developed by TNTSuperMan.<br>Powered by Vite/Vue</small>
 </template>
 
