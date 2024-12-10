@@ -13,6 +13,7 @@ if(location.hash){
       let url = "";
       for(let i = 0;i < content.length;i++)
         i % padding == 0 ? (url += content[i]) : 0;
+      console.log(url)
     }else{
       throw 0;
     }
