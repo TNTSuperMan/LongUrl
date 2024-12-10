@@ -9,7 +9,7 @@ if(location.hash){
     if(json instanceof Array){
       if(json.length < 2) throw 0;
       const padding: number = json[0];
-      const content: string = json[1];
+      const content: string = atob(json[1]);
       let url = "";
       for(let i = 0;i < content.length;i++)
         i % padding == 0 ? (url += content[i]) : 0;

@@ -8,7 +8,7 @@ export const longify = (url:string, is_deploy:boolean, size:number):string => {
     if(is_deploy){
         const padded = url.split("").map(e=>e+rand()).join("");
         return "https://tntsuperman.github.io/LongUrl/#" +
-            encodeURIComponent(btoa(JSON.stringify([size, btoa(padded)])))
+            encodeURIComponent(btoa(JSON.stringify([size+1, btoa(padded)])))
     }else{
         let r = "";
         for(let i = 0;i < 20;i++)
