@@ -13,12 +13,10 @@ if(location.hash){
       let url = "";
       for(let i = 0;i < content.length;i++)
         i % padding == 0 ? (url += content[i]) : 0;
-      console.log(url)
+      location.href = url;
     }else{
       throw 0;
     }
-    
-    console.log(json)
   }catch{
     location.href = "https://bing.com"
   }

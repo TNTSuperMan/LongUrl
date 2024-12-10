@@ -20,7 +20,7 @@ const space = ref(1)
     増やす量：<input type="number" min="1" :readonly="type_isDeploy" v-model="volume"><br>
     余白量：<input type="number" min="1" :readonly="!type_isDeploy" v-model="space"><br>
 
-    <button class="btn" @click="$emit('long', url, type_isDeploy, type_isDeploy?space:volume)">延長！</button>
+    <button class="btn" @click="$emit('long', url, type_isDeploy, type_isDeploy?space:volume)">延長</button>
   </div>
 </template>
 
